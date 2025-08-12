@@ -47,8 +47,8 @@ public class homeController {
 // pull
 	@RequestMapping(value = "/v2/**", method = { RequestMethod.GET, RequestMethod.HEAD })
 	public void getManifest(HttpServletRequest request, HttpServletResponse response) throws IOException {
-  String blobsFilePath = "/home/local/ZOHOCORP/aravindh-pt4880/Documents/registry/blobs/";
-		String repositoryFilePath = "/home/local/ZOHOCORP/aravindh-pt4880/Documents/registry/repositories/";
+  String blobsFilePath = "/home/local/aravindh-pt4880/Documents/registry/blobs/";
+		String repositoryFilePath = "/home/local/aravindh-pt4880/Documents/registry/repositories/";
 		String fileName = "";
 
 		String Path = request.getRequestURI();
@@ -57,7 +57,7 @@ public class homeController {
 		} else {
     //			HARD-CODED-EXAMPLE			
 			if (Path.equals("/v2/ubuntu/manifests/20.04")) {
-				fileName = "/home/local/ZOHOCORP/aravindh-pt4880/Documents/data";
+				fileName = "/home/local/aravindh-pt4880/Documents/data";
 				digest = "sha256:9c152418e380c6e6dd7e19567bb6762b67e22b1d0612e4f5074bda6e6040c64a";
   			content_type = "application/vnd.docker.distribution.manifest.v2+json";
 			}
@@ -65,7 +65,7 @@ public class homeController {
 					"/v2/ubuntu/blobs/sha256:2b4cba85892afc2ad8ce258a8e3d9daa4a1626ba380677cee93ef2338da442ab")) {
 				System.out.println("Inside blob_1");
 				System.out.println("Inside manifest");
-				fileName = "/home/local/ZOHOCORP/aravindh-pt4880/Documents/layers/2b/data";
+				fileName = "/home/local/aravindh-pt4880/Documents/layers/2b/data";
 				digest = "sha256:2b4cba85892afc2ad8ce258a8e3d9daa4a1626ba380677cee93ef2338da442ab";
 				content_type = "application/vnd.docker.container.image.v1+json";
 			}
@@ -73,7 +73,7 @@ public class homeController {
 			else if (Path.equals(
 					"/v2/ubuntu/blobs/sha256:7c3b88808835aa80f1ef7f03083c5ae781d0f44e644537cd72de4ce6c5e62e00")) {
 				System.out.println("Inside blob_2");
-				fileName = "/home/local/ZOHOCORP/aravindh-pt4880/Documents/layers/7c/data";
+				fileName = "/home/local/aravindh-pt4880/Documents/layers/7c/data";
 				digest = "sha256:7c3b88808835aa80f1ef7f03083c5ae781d0f44e644537cd72de4ce6c5e62e00";
 				content_type = "application/vnd.docker.image.rootfs.diff.tar.gzip";
 
