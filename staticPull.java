@@ -1,4 +1,4 @@
-package com.zoho.zcartifact;
+package com.aravindhan.zcartifact;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
