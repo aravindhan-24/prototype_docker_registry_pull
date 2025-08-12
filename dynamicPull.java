@@ -1,4 +1,4 @@
-package com.zoho.zcartifact;
+package com.aravindhan.zcartifact;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -47,8 +47,8 @@ public class homeController {
 	public void getManifest(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
 
-		String blobsFilePath = "/home/local/ZOHOCORP/aravindh-pt4880/Documents/registry/blobs/";
-		String repositoryFilePath = "/home/local/ZOHOCORP/aravindh-pt4880/Documents/registry/repositories/";
+		String blobsFilePath = "/home/local/aravindh-pt4880/Documents/registry/blobs/";
+		String repositoryFilePath = "/home/local/aravindh-pt4880/Documents/registry/repositories/";
 		String fileName = "";
 
 		String Path = request.getRequestURI();
