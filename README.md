@@ -33,10 +33,4 @@ This project simulates the process of pulling Docker images from a registry, pro
    java dynamicPull
 
    java staticPull
-   
-## 🧪 Testing
 
-To run tests:
-
-javac TestPull.java
-java TestPull
